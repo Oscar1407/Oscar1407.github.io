@@ -1,0 +1,15 @@
+{
+  "name": "proyecto_individual_oscar_parajeles_corrales-b65275",
+  "version": "1.0.0",
+  "description": "Proyecto Portafolio Oscar Parajeles Corrales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css --output-style compact"
+  },
+  "author": "Oscar Parajeles Corrales",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

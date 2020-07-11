@@ -1,0 +1,283 @@
+/*pagina inicio*/
+.main-w {
+  width:100%;
+  height:1000px;
+  transition: all .5s ease;
+}
+
+.containertext{
+  width:100%;
+  height:1000px;
+  position:relative;
+  background-color: #bbc0c7;
+  &__resumen{
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    padding:1em;
+    line-height:2;
+    color:rgba(33, 36, 8, 1);
+  }
+  &__titulo{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__parrafo{
+    width:80%;
+    margin:50px auto;
+    text-align:inherit;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  &__hr{
+    position: relative;
+    left: 68px;
+    background-color: black;
+    width: 300px;
+  }
+}
+
+.containercontact{
+  background-color: #8F96A2;
+  width: 400px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 17px;
+  border: 2px solid black;
+  border-radius: 2%;
+  &__titulocontacto{
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__info{
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+  &__correo{
+    position: absolute;
+    top: 800px;
+    left: 150px;
+  }
+  &__telefono{
+    position: absolute;
+    top: 747px;
+    left: 220px;
+  }
+}
+/*fin pagina inicio*/
+
+/*pagina acerca de mi*/
+.sectionRasgosPersonales{
+  width: 100%;
+  height: 100%;
+  background-color: #bbc0c7;
+  position: relative;
+  &__titulocontainerRasgos{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  &__titulorasgos{
+    position: relative;
+    top: 50px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__parraforasgos{
+    width:80%;
+    margin:20px 0 0 50px;
+    text-align:inherit;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+}
+/*fin pagina acerca de mi*/
+
+/*pagina Certificaciones*/
+.sectioncertificaciones{
+  width: 100%;
+  height: 1200px;
+  background-color: #bbc0c7;
+  position: relative;
+  &__containerprimariasecundaria{
+    position: relative;
+    height: 30%;
+  }
+  &__containeruniversidad{
+    position: relative;
+    height: 30%;
+  }
+  &__containerextras{
+    position: relative;
+    height: 30%;
+  }
+}
+
+.main--certificaciones {
+  width:100%;
+  height:1200;
+  background-color: rgba(29, 33, 32, 1);
+  transition: all .5s ease;
+}
+/*fin pagina certificaciones*/
+
+/*pagina habilidades*/
+.sectionHabilidades{
+  width: 100%;
+  height: 100%;
+  background-color: #bbc0c7;
+  position: relative;
+  &__containerexperienciapersonal{
+    position: relative;
+    height: 50%;
+  }
+  &__containerhabilidades{
+    position: relative;
+    height: 50%;
+  }
+}
+/*fin pagina habilidades*/
+
+/*pagina propositos*/
+.sectionPropositos{
+  width: 100%;
+  height: 100%;
+  background-color: #bbc0c7;
+  position: relative;
+  &__containerexperienciapersonal{
+    position: relative;
+    top: 100px;
+    height: 100%;
+  }
+}
+/*fin pagina propositos*/
+
+@media screen and (min-width: 1000px){
+  /*pagina inicio*/
+.main-w {
+  width:100%;
+  height:750px;
+  transition: all .5s ease;
+}
+.containertext{
+  width:100%;
+  height:750px;
+  position:relative;
+  &__resumen{
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width:50%;
+  }
+}
+.containercontact{
+  margin-top: 200px;
+  margin-left: 1200px;
+  &__correo{
+    position: absolute;
+    top: 320px;
+    left: 1350px;
+  }
+  &__telefono{
+    position: absolute;
+    top: 270px;
+    left: 1400px;
+  }
+}
+hr{
+  position: absolute;
+  top: -500px;
+}
+
+/*fin pagina inicio*/
+
+/*pagina acerca de mi*/
+.sectionRasgosPersonales{
+  width: 100%;
+  height: 100%;
+  background-color: #bbc0c7;
+  &__parraforasgos{
+    width:50%;
+    margin:50px 0 0 500px;
+    text-align:inherit;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+}
+/*fin pagina acerca de mi*/
+
+/*pagina certificacion*/
+.sectioncertificaciones{
+  width: 100%;
+  height: 100%;
+  background-color: #bbc0c7;
+  position: relative;
+  &__containerprimariasecundaria{
+    position: relative;
+    top: 100px;
+    height: 100%;
+    width: 30%;
+  }
+  &__containeruniversidad{
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    height: 100%;
+    width: 30%;
+  }
+  &__containerextras{
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+    height: 100%;
+    width: 30%;
+  }
+}
+
+.main--certificaciones {
+  width:100%;
+  height:800px;
+  transition: all .5s ease;
+}
+/*fin pagina certificaciones*/
+
+/*pagina habilidades*/
+.sectionHabilidades{
+  &__containerexperienciapersonal{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 50%;
+    height: 100%;
+  }
+  &__containerhabilidades{
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    width: 50%;
+    height: 100%;
+  }
+}
+/*fin pagina habilidades*/
+.sectionPropositos{
+  &__containerexperienciapersonal{
+    position: relative;
+    left: 400px;
+    top: 100px;
+    height: 100%;
+    width: 60%;
+  }
+}
+}

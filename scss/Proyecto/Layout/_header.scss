@@ -1,0 +1,53 @@
+header {
+display: flex;
+flex-wrap: wrap;
+}
+
+.bannercontainer{
+  height: 150px;
+  width: 100%;
+  &__img{
+    height: 150px;
+    width: 100%;
+    position: fixed;
+  }
+  &__nombre{
+    font-family: sans-serif;
+    position: absolute;
+    top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 46px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 1), 0px 4px 4px rgba(0, 0, 0, 1);
+    position: fixed;
+  }
+}
+@media screen and (min-width: 1000px){
+.bannercontainer{
+  height: 300px;
+  &__img{
+    height: 300px;
+    position: static;
+  }
+  &__nombre{
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    animation-duration: 2s;
+    animation-name: textoMovimiento;
+    animation-timing-function: ease;
+  }
+}
+@keyframes textoMovimiento {
+  from {
+        margin-left: 100%;
+  }
+  to {
+        margin-left: 0%;
+  }
+
+}
+}

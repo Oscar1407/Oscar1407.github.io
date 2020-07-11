@@ -1,0 +1,100 @@
+
+/*pagina inicio*/
+.nav{
+  position: absolute;
+  width:200px;
+  height:957px;
+  left:-220px;
+  padding-top:47px;
+  background-color: rgba(29, 33, 32, 1);
+  transition:all .5s ease;
+  &__item{
+    display:block;
+    text-decoration: none;
+    width:96%;
+    margin:0 auto;
+    line-height:2;
+    position:relative;
+    border-bottom:.5px solid rgba(59, 62, 61, 1);
+    border-top:.5px solid rgba(59, 62, 61, 1);
+    background-color:transparent;
+    font-family: sans-serif;
+    text-align:center;
+    color:rgba(221, 231, 228, 1);
+    &:hover{
+      display: inline-block;
+      background: gray;
+      -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+      transform: scale(1.2);
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.menu-toogle {
+  position:absolute;
+  width: 35px;
+  line-height:1.1;
+  text-align:center;
+  top:6.5px;
+  left: 8px;
+  border-radius:3px;
+  background-color: #142b25;
+  transition: all .5s ease;
+  z-index:10;
+  &::before {
+    position: absolute;
+    top: 150px;
+    content:"☰";
+    font-size:32px;
+    color:black;
+  }
+}
+
+.checkbox {
+  display:none;
+  &:checked ~ .nav{
+    left:0px;
+  }
+  &:checked ~ .main-w{
+    margin-left:200px;
+  }
+  &:checked ~ .main--certificaciones{
+    margin-left:200px;
+  }
+  &:checked ~ .menu-toogle {
+    left:208px;
+  }
+  &:checked ~ .footer__container{
+    margin-left: 200px;
+  }
+}
+
+/*fin pagina inicio*/
+
+@media screen and (min-width: 1000px){
+  .menu-toogle {
+    display: none;
+  }
+  .nav{
+    position: static;
+    padding: 20px;
+    width: 1865px;
+    height: 20px;
+    background-color: #3987f4;
+    &__item{
+      display: inline;
+      font-size: 18px;
+      position: static;
+      border: none;
+      line-height:1;
+      margin-left: 15px;
+      &:hover{
+        display: inline;
+        background: #1464d2;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}

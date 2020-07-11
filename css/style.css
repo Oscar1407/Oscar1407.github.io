@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+
+body { font-family: Arial, sans-serif; font-size: 14px; color: #000; }
+
+/*pagina inicio*/
+.main-w { width: 100%; height: 1000px; transition: all .5s ease; }
+
+.containertext { width: 100%; height: 1000px; position: relative; background-color: #bbc0c7; }
+
+.containertext__resumen { width: 80%; height: auto; margin: 0 auto; padding: 1em; line-height: 2; color: #212408; }
+
+.containertext__titulo { font-family: sans-serif; font-weight: normal; font-size: 24px; line-height: 30px; text-align: center; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.containertext__parrafo { width: 80%; margin: 50px auto; text-align: inherit; font-size: 18px; font-family: sans-serif; }
+
+.containertext__hr { position: relative; left: 68px; background-color: black; width: 300px; }
+
+.containercontact { background-color: #8F96A2; width: 400px; height: 200px; margin-top: 50px; margin-left: 17px; border: 2px solid black; border-radius: 2%; }
+
+.containercontact__titulocontacto { font-family: Arial; font-weight: bolder; font-size: 24px; line-height: 30px; text-align: center; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.containercontact__info { margin-top: 35px; margin-left: 20px; }
+
+.containercontact__correo { position: absolute; top: 800px; left: 150px; }
+
+.containercontact__telefono { position: absolute; top: 747px; left: 220px; }
+
+/*fin pagina inicio*/
+/*pagina acerca de mi*/
+.sectionRasgosPersonales { width: 100%; height: 100%; background-color: #bbc0c7; position: relative; }
+
+.sectionRasgosPersonales__titulocontainerRasgos { position: relative; width: 100%; height: 100px; text-align: center; }
+
+.sectionRasgosPersonales__titulorasgos { position: relative; top: 50px; font-family: sans-serif; font-weight: normal; font-size: 24px; line-height: 30px; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.sectionRasgosPersonales__parraforasgos { width: 80%; margin: 20px 0 0 50px; text-align: inherit; font-size: 18px; font-family: sans-serif; }
+
+/*fin pagina acerca de mi*/
+/*pagina Certificaciones*/
+.sectioncertificaciones { width: 100%; height: 1200px; background-color: #bbc0c7; position: relative; }
+
+.sectioncertificaciones__containerprimariasecundaria { position: relative; height: 30%; }
+
+.sectioncertificaciones__containeruniversidad { position: relative; height: 30%; }
+
+.sectioncertificaciones__containerextras { position: relative; height: 30%; }
+
+.main--certificaciones { width: 100%; height: 1200; background-color: #1d2120; transition: all .5s ease; }
+
+/*fin pagina certificaciones*/
+/*pagina habilidades*/
+.sectionHabilidades { width: 100%; height: 100%; background-color: #bbc0c7; position: relative; }
+
+.sectionHabilidades__containerexperienciapersonal { position: relative; height: 50%; }
+
+.sectionHabilidades__containerhabilidades { position: relative; height: 50%; }
+
+/*fin pagina habilidades*/
+/*pagina propositos*/
+.sectionPropositos { width: 100%; height: 100%; background-color: #bbc0c7; position: relative; }
+
+.sectionPropositos__containerexperienciapersonal { position: relative; top: 100px; height: 100%; }
+
+/*fin pagina propositos*/
+@media screen and (min-width: 1000px) { /*pagina inicio*/
+  .main-w { width: 100%; height: 750px; transition: all .5s ease; }
+  .containertext { width: 100%; height: 750px; position: relative; }
+  .containertext__resumen { position: absolute; left: 0px; top: 100px; width: 50%; }
+  .containercontact { margin-top: 200px; margin-left: 1200px; }
+  .containercontact__correo { position: absolute; top: 320px; left: 1350px; }
+  .containercontact__telefono { position: absolute; top: 270px; left: 1400px; }
+  hr { position: absolute; top: -500px; }
+  /*fin pagina inicio*/
+  /*pagina acerca de mi*/
+  .sectionRasgosPersonales { width: 100%; height: 100%; background-color: #bbc0c7; }
+  .sectionRasgosPersonales__parraforasgos { width: 50%; margin: 50px 0 0 500px; text-align: inherit; font-size: 18px; font-family: sans-serif; }
+  /*fin pagina acerca de mi*/
+  /*pagina certificacion*/
+  .sectioncertificaciones { width: 100%; height: 100%; background-color: #bbc0c7; position: relative; }
+  .sectioncertificaciones__containerprimariasecundaria { position: relative; top: 100px; height: 100%; width: 30%; }
+  .sectioncertificaciones__containeruniversidad { position: absolute; top: 100px; left: 600px; height: 100%; width: 30%; }
+  .sectioncertificaciones__containerextras { position: absolute; top: 100px; left: 1200px; height: 100%; width: 30%; }
+  .main--certificaciones { width: 100%; height: 800px; transition: all .5s ease; }
+  /*fin pagina certificaciones*/
+  /*pagina habilidades*/
+  .sectionHabilidades__containerexperienciapersonal { position: absolute; top: 250px; left: 20px; width: 50%; height: 100%; }
+  .sectionHabilidades__containerhabilidades { position: absolute; top: 250px; left: 900px; width: 50%; height: 100%; }
+  /*fin pagina habilidades*/
+  .sectionPropositos__containerexperienciapersonal { position: relative; left: 400px; top: 100px; height: 100%; width: 60%; } }
+
+/*pagina inicio*/
+.footer { display: flex; align-items: center; background-color: #333333; color: white; }
+
+.footer__container { width: 100%; height: 150px; display: flex; }
+
+.footer__list { list-style: none; margin: 40px 20px 0px 30px; display: flex; }
+
+.footer__item i { padding: 5px; font-size: 20px; color: white; padding-right: 10px; }
+
+.footer__instagram i { font-size: 40px; }
+
+.footer__instagram i:hover { color: black; transition-duration: 0.4s; }
+
+.footer__facebook i { font-size: 40px; }
+
+.footer__facebook i:hover { color: black; transition-duration: 0.4s; }
+
+.footer__derechos { position: absolute; top: 1260px; left: 100px; }
+
+/*fin pagina inicio*/
+/*pagina certificaciones*/
+.footer__derechoscertificaciones { position: absolute; top: 1450px; left: 100px; }
+
+/*fin pagina certificaciones*/
+@media screen and (min-width: 1000px) { /*pagina inicio*/
+  .footer { height: 190px; }
+  .footer__derechos { position: absolute; top: 1260px; left: 800px; }
+  /*fin pagina inicio*/
+  /*pagina certificaciones*/
+  __instagram i { font-size: 40px; }
+  __instagram i:hover { color: black; transition-duration: 0.4s; }
+  __facebook i { font-size: 40px; }
+  __facebook i:hover { color: black; transition-duration: 0.4s; }
+  .footer__derechoscertificaciones { position: absolute; top: 1300px; left: 800px; }
+  /*fin pagina certificaciones*/ }
+
+header { display: flex; flex-wrap: wrap; }
+
+.bannercontainer { height: 150px; width: 100%; }
+
+.bannercontainer__img { height: 150px; width: 100%; position: fixed; }
+
+.bannercontainer__nombre { font-family: sans-serif; position: absolute; top: 10px; font-style: normal; font-weight: normal; font-size: 25px; line-height: 46px; color: #FFFFFF; box-sizing: border-box; text-shadow: 0px 4px 4px black, 0px 4px 4px black; position: fixed; }
+
+@media screen and (min-width: 1000px) { .bannercontainer { height: 300px; }
+  .bannercontainer__img { height: 300px; position: static; }
+  .bannercontainer__nombre { position: absolute; top: 50px; font-size: 40px; animation-duration: 2s; animation-name: textoMovimiento; animation-timing-function: ease; }
+  @keyframes textoMovimiento { from { margin-left: 100%; }
+    to { margin-left: 0%; } } }
+
+/*pagina inicio*/
+.nav { position: absolute; width: 200px; height: 957px; left: -220px; padding-top: 47px; background-color: #1d2120; transition: all .5s ease; }
+
+.nav__item { display: block; text-decoration: none; width: 96%; margin: 0 auto; line-height: 2; position: relative; border-bottom: 0.5px solid #3b3e3d; border-top: 0.5px solid #3b3e3d; background-color: transparent; font-family: sans-serif; text-align: center; color: #dde7e4; }
+
+.nav__item:hover { display: inline-block; background: gray; -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); transform: scale(1.2); transition-duration: 0.5s; }
+
+.menu-toogle { position: absolute; width: 35px; line-height: 1.1; text-align: center; top: 6.5px; left: 8px; border-radius: 3px; background-color: #142b25; transition: all .5s ease; z-index: 10; }
+
+.menu-toogle::before { position: absolute; top: 150px; content: "☰"; font-size: 32px; color: black; }
+
+.checkbox { display: none; }
+
+.checkbox:checked ~ .nav { left: 0px; }
+
+.checkbox:checked ~ .main-w { margin-left: 200px; }
+
+.checkbox:checked ~ .main--certificaciones { margin-left: 200px; }
+
+.checkbox:checked ~ .menu-toogle { left: 208px; }
+
+.checkbox:checked ~ .footer__container { margin-left: 200px; }
+
+/*fin pagina inicio*/
+@media screen and (min-width: 1000px) { .menu-toogle { display: none; }
+  .nav { position: static; padding: 20px; width: 1865px; height: 20px; background-color: #3987f4; }
+  .nav__item { display: inline; font-size: 18px; position: static; border: none; line-height: 1; margin-left: 15px; }
+  .nav__item:hover { display: inline; background: #1464d2; transition-duration: 0.5s; } }
